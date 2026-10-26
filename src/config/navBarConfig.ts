@@ -91,38 +91,37 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	});
 
 	// 自定义导航栏链接
-	links.push({
-		name: "链接",
-		url: "#",
-		icon: "material-symbols:link",
-		// 子菜单
-		children: [
-			{
-				name: "GitHub",
-				url: "https://github.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:github",
-			},
-			{
-				name: "Gitee",
-				url: "https://gitee.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:gitee",
-			},
-			{
-				name: "QQ交流群",
-				url: "https://qm.qq.com/q/ZGsFa8qX2G",
-				external: true,
-				icon: "fa7-brands:qq",
-			},
-			{
-				name: "Firefly文档",
-				url: "https://docs-firefly.cuteleaf.cn",
-				external: true,
-				icon: "material-symbols:docs",
-			},
-		],
-	});
+links.push({
+	name: "链接",
+	url: "#",
+	icon: "material-symbols:link",
+	children: [
+	  {
+		name: "B站",
+		url: "https://space.bilibili.com/1711613651",
+		external: true,
+		icon: "fa7-brands:bilibili",
+	  },
+	  {
+		name: "抖音",
+		url: "https://www.douyin.com/user/MS4wLjABAAAAq9j9m79ewcOwIYtCwmaoGnsgIreapnaLJFlzxxjyQgoaQEItXUZtNoA_OfZrIIUJ",
+		external: true,
+		icon: "fa7-brands:tiktok",
+	  },
+	  {
+		name: "GitHub",
+		url: "https://github.com/kexinyang74-web",
+		external: true,
+		icon: "fa7-brands:github",
+	  },
+	  {
+		name: "QQ：3307598126",
+		url: "https://wpa.qq.com/msgrd?v=3&uin=3307598126&site=qq&menu=yes",
+		external: true,
+		icon: "fa7-brands:qq",
+	  },
+	],
+  });
 
 	// 文档链接
 	// links.push({

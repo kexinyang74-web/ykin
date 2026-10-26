@@ -6,13 +6,13 @@ export const profileConfig: ProfileConfig = {
 	// 1. public 目录（以 "/" 开头，不优化）："/assets/images/avatar.webp"
 	// 2. src 目录（不以 "/" 开头，自动优化但会增加构建时间，推荐）："assets/images/avatar.webp"
 	// 3. 远程 URL："https://example.com/avatar.jpg"
-	avatar: "assets/images/avatar.avif",
+	avatar: "/银狼头像.jpg",
 
 	// 名字
-	name: "Firefly",
+	name: "YKIN",
 
 	// 个人签名
-	bio: "Hello, I'm Firefly.",
+	bio: "我是编程小白，正在用 AI 一点点搭建自己的网站。",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
@@ -22,28 +22,28 @@ export const profileConfig: ProfileConfig = {
 	// showName: true 时显示图标和名称，false 时只显示图标
 	links: [
 		{
-			name: "qq",
-			icon: "fa7-brands:qq",
-			url: "https://qm.qq.com/q/ZGsFa8qX2G",
-			showName: false,
+			name: "B站",
+			icon: "fa7-brands:bilibili",
+			url: "https://space.bilibili.com/1711613651",
+			showName: true,
+		},
+		{
+			name: "抖音",
+			icon: "fa7-brands:tiktok",
+			url: "https://www.douyin.com/user/MS4wLjABAAAAq9j9m79ewcOwIYtCwmaoGnsgIreapnaLJFlzxxjyQgoaQEItXUZtNoA_OfZrIIUJ",
+			showName: true,
 		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/CuteLeaf",
-			showName: false,
+			url: "https://github.com/kexinyang74-web",
+			showName: true,
 		},
 		{
-			name: "Email",
-			icon: "fa7-solid:envelope",
-			url: "mailto:xiaye@msn.com",
-			showName: false,
-		},
-		{
-			name: "RSS",
-			icon: "fa7-solid:rss",
-			url: "/rss/",
-			showName: false,
-		},
+			name: "QQ：3307598126",
+			icon: "fa7-brands:qq",
+			url: "https://wpa.qq.com/msgrd?v=3&uin=3307598126&site=qq&menu=yes",
+			showName: true,
+		  },
 	],
 };

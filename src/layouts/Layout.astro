@@ -393,7 +393,7 @@ const siteLang = lang.replace("_", "-");
       rel="alternate"
       type="application/rss+xml"
       title={profileConfig.name}
-      href={`${Astro.site}rss.xml`}
+      href={new URL(url("/rss.xml"), Astro.site).href}
     />
 
     <!-- Font Setup (Astro Font API) -->

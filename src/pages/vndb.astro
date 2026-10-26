@@ -18,7 +18,7 @@ import {
 
 // 检查页面是否启用
 if (!siteConfig.pages.vndb) {
-	return Astro.redirect("/404/");
+	return Astro.redirect(`${import.meta.env.BASE_URL}404/`);
 }
 
 const buildTime = formatDateI18nWithTime(new Date());

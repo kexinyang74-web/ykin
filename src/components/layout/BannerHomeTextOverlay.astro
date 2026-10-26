@@ -39,7 +39,7 @@ const homeTextLinksEnable = homeText?.linksEnable !== false;
                 )}
                 {/* 横幅标题下方的链接图标（subtitle 的兄弟节点，避免被打字机/随机副标题的 textContent 覆盖清掉） */}
                 {homeTextLinksEnable && homeTextLinks && homeTextLinks.length > 0 && (
-                    <div class="banner-links mt-5 flex items-center justify-center gap-3 pointer-events-auto">
+                    <div class="banner-links mt-5 flex flex-wrap items-center justify-center gap-3 pointer-events-auto">
                         {homeTextLinks.map((link) => {
                             // mailto 链接做 base64 加密防爬虫（点击时才解码导航，与 Profile 一致）
                             const isMailto = link.url.startsWith("mailto:");

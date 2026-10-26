@@ -159,7 +159,8 @@ export function shouldPlayOpening(visit: OpeningVisit): boolean {
 
 	function syncRoute() {
 		const path = window.location.pathname.replace(/\/+$/, "") || "/";
-		available = path === "/" || path === "/intro-demo";
+		const base = import.meta.env.BASE_URL.replace(/\/+$/, "");
+		available = path === (base || "/") || path === `${base}/intro-demo`;
 		if (!available) {
 			finish();
 			return;
